@@ -31,6 +31,19 @@ Ingénieure en informatique, je suis passionnée par les nouvelles technologies 
 
 ## 🚀 Projets Présentés
 
+### Company Website
+**Description** :
+Ce projet est un site web d'entreprise permettant de présenter les services, les offres d'emploi et les informations clés de l'organisation. Il sert de plateforme centrale pour les clients potentiels et les chercheurs d'emploi.
+
+**Fonctionnalités principales :**
+- Présentation des services et de l’entreprise.
+- Affichage des offres d’emploi avec possibilité de postuler.
+- Formulaire de contact et informations de l’entreprise.
+
+**[Voir la démo](https://drive.google.com/file/d/1OVURQCo_OFCfBkwtatgUVxqdKKPX_Cbm/preview)**
+
+---
+
 ### JobPortal Platform
 **Description** :
 Ce projet vise à connecter les chercheurs d'emploi avec les recruteurs via une plateforme où des offres d'emploi peuvent être publiées et consultées. 
