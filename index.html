@@ -1,253 +1,262 @@
 <!DOCTYPE html>
-<html lang="fr">
-
+<html lang="en" class="scroll-smooth">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Poppins', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f3f4f6;
-            color: #333;
-        }
-
-        header {
-            background-color: #843b92;
-            color: white;
-            padding: 20px;
-            text-align: center;
-
-            letter-spacing: 2px;
-            font-weight: 600;
-            animation: slideIn 1s ease-out;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-
-        @keyframes slideIn {
-            0% {
-                transform: translateX(-100%);
-            }
-
-            100% {
-                transform: translateX(0);
-            }
-        }
-
-        section {
-            margin: 40px 20px;
-        }
-
-        .about-me,
-        .projects {
-            text-align: center;
-            margin-bottom: 40px;
-        }
-
-        .about-me p {
-            font-size: 1.2rem;
-            line-height: 1.8;
-        }
-
-        .about-me h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-
-        .projects h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-        }
-
-        .projects iframe {
-            width: 100%;
-            max-width: 560px;
-            height: 315px;
-            border: none;
-            margin-bottom: 20px;
-            border-radius: 10px;
-            transition: transform 0.3s ease;
-        }
-
-        .projects iframe:hover {
-            transform: scale(1.05);
-        }
-
-        .projects li {
-            text-align: left;
-            margin-left: 20px;
-        }
-
-        footer {
-            background-color: #843b92;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            font-size: 1rem;
-        }
-
-        .skills {
-            padding: 20px;
-            background-color: #f8f9fa;
-        }
-
-        .skills h2 {
-            font-size: 2rem;
-            margin-bottom: 20px;
-            text-align: center;
-        }
-
-        .skills-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
-        .skill-card {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s ease;
-        }
-
-        .skill-card:hover {
-            transform: scale(1.05);
-        }
-
-        .skill-card h3 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        .skill-card img {
-            width: 50px;
-            height: 50px;
-            object-fit: contain;
-            display: inline-block;
-
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Houda Hafi – Software Engineer</title>
+  <meta name="description" content="Portfolio of Houda Hafi, a full-stack software engineer." />
+  <meta name="theme-color" content="#F6F7FB" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👋</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      fontFamily: { sans: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'] },
+      colors: { ink:'#F6F7FB', panel:'#FFFFFF', line:'#E3E6F0', paper:'#151B2E', mute:'#5B647E', accent:'#3F6BFF', violet:'#7B5CFF' }
+    } } };
+  </script>
+  <style>
+    body { background:#F6F7FB; color:#151B2E; -webkit-font-smoothing:antialiased; }
+    :focus-visible { outline:2px solid #3F6BFF; outline-offset:3px; border-radius:6px; }
+    ::selection { background:#3F6BFF; color:#fff; }
+    .grad { background:linear-gradient(90deg,#3F6BFF,#7B5CFF); -webkit-background-clip:text; background-clip:text; color:transparent; }
+    .hero-in { opacity:0; transform:translateY(16px); animation:in .8s cubic-bezier(.2,.7,.2,1) forwards; }
+    @keyframes in { to { opacity:1; transform:none; } }
+    .reveal { opacity:0; transform:translateY(16px); transition:opacity .7s ease, transform .7s ease; }
+    .reveal.in { opacity:1; transform:none; }
+    .card { box-shadow:0 1px 2px rgba(21,27,46,.06); transition:transform .3s ease, border-color .3s ease, box-shadow .3s ease; }
+    .card:hover { transform:translateY(-4px); border-color:#3F6BFF; box-shadow:0 14px 30px -14px rgba(63,107,255,.3); }
+    .nav-link[aria-current="true"] { color:#151B2E; }
+    @media (prefers-reduced-motion:reduce) {
+      html { scroll-behavior:auto !important; }
+      .hero-in,.reveal { animation:none; opacity:1; transform:none; transition:none; }
+      .card,.card:hover { transition:none; transform:none; }
+    }
+  </style>
 </head>
+<body class="font-sans leading-relaxed">
 
-<body>
+  <!-- NAV -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-line/60 bg-ink/80 backdrop-blur-md">
+    <nav class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4" aria-label="Main">
+      <a href="#home" class="text-lg font-extrabold tracking-tight">Houda Hafi</a>
+      <ul class="hidden items-center gap-8 text-sm font-medium text-mute md:flex">
+        <li><a class="nav-link hover:text-paper transition-colors" href="#about">About</a></li>
+        <li><a class="nav-link hover:text-paper transition-colors" href="#skills">Skills</a></li>
+        <li><a class="nav-link hover:text-paper transition-colors" href="#experience">Experience</a></li>
+        <li><a class="nav-link hover:text-paper transition-colors" href="#projects">Projects</a></li>
+      </ul>
+      <button id="menuBtn" class="rounded-md border border-line px-3 py-1.5 text-sm md:hidden" aria-expanded="false" aria-controls="mobileMenu">Menu</button>
+    </nav>
+    <ul id="mobileMenu" class="hidden border-t border-line/60 bg-ink px-6 py-3 text-mute md:hidden">
+      <li><a class="block py-2" href="#about">About</a></li>
+      <li><a class="block py-2" href="#skills">Skills</a></li>
+      <li><a class="block py-2" href="#experience">Experience</a></li>
+      <li><a class="block py-2" href="#projects">Projects</a></li>
+    </ul>
+  </header>
 
-    <header>
-        <h1>Welcome to My Portfolio 🎉</h1>
-        <h3>Hi there, I'm Houda Hafi 👋</h3>
-        <p>
-            <a href="https://www.linkedin.com/in/houda-hafi-a3a14127a/" target="_blank">
-                <img src="https://img.shields.io/badge/-houda.hafi-blue?style=flat&logo=Linkedin&logoColor=white"
-                    alt="LinkedIn">
-            </a>
-            <a href="mailto:houda.hafi@ensi-uma.tn">
-                <img src="https://img.shields.io/badge/-houda.hafi-c14438?style=flat&logo=Gmail&logoColor=white"
-                    alt="Gmail">
-            </a>
+  <main>
+    <!-- HOME -->
+    <section id="home" class="relative flex min-h-screen items-center justify-center overflow-hidden px-6 pt-20 text-center">
+      <div class="pointer-events-none absolute left-1/2 top-1/3 h-[480px] w-[480px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-accent/10 blur-3xl" aria-hidden="true"></div>
+      <div class="relative max-w-3xl">
+        <h1 class="hero-in text-4xl font-extrabold tracking-tight sm:text-6xl" style="animation-delay:.1s">
+          Hi there, I’m <span class="grad">Houda Hafi</span> 👋
+        </h1>
+        <p class="hero-in mx-auto mt-6 max-w-2xl text-lg text-mute" style="animation-delay:.3s">
+          I’m a Software Engineer with a full-stack background, passionate about building scalable applications, improving user experience, and shipping high-quality work with great teams.
         </p>
-    </header>
-
-    <section class="about-me">
-        <h2>About Me 👩‍💻</h2>
-        <p>As a Computer Science Engineer 🧑‍💻, I am passionate about new technologies and motivated by continuous
-            learning
-            as well as improving my technical skills 📚. Through my diverse academic and professional experiences, I
-            have
-            developed a strong ability to collaborate effectively within teams and successfully lead projects to
-            completion ❤️.</p>
-    </section>
-
-    <section class="skills">
-        <h2>Skills 💡</h2>
-
-        <div class="skills-container">
-
-            <div class="skill-card">
-                <h3>Languages</h3>
-                <img src="https://skillicons.dev/icons?i=py" alt="Python">
-                <img src="https://skillicons.dev/icons?i=java" alt="Java">
-                <img src="https://skillicons.dev/icons?i=c" alt="C">
-                <img src="https://skillicons.dev/icons?i=php" alt="PHP">
-                <img src="https://skillicons.dev/icons?i=js" alt="JavaScript">
-                <img src="https://skillicons.dev/icons?i=ts" alt="TypeScript">
-            </div>
-
-            <div class="skill-card">
-                <h3>Frameworks & Libraries</h3>
-                <img src="https://skillicons.dev/icons?i=angular" alt="Angular">
-                <img src="https://skillicons.dev/icons?i=react" alt="React">
-                <img src="https://skillicons.dev/icons?i=nestjs" alt="NestJS">
-                <img src="https://skillicons.dev/icons?i=express" alt="Express">
-                <img src="https://skillicons.dev/icons?i=spring" alt="Spring">
-                <img src="https://skillicons.dev/icons?i=flask" alt="Flask">
-            </div>
-
-            <div class="skill-card">
-                <h3>Databases</h3>
-                <img src="https://skillicons.dev/icons?i=mysql" alt="MySQL">
-                <img src="https://skillicons.dev/icons?i=mongodb" alt="MongoDB">
-                <img src="https://skillicons.dev/icons?i=postgres" alt="PostgreSQL">
-            </div>
-
-            <div class="skill-card">
-                <h3>Version Control Tools</h3>
-                <img src="https://skillicons.dev/icons?i=git" alt="Git">
-                <img src="https://skillicons.dev/icons?i=github" alt="GitHub">
-            </div>
+        <div class="hero-in mt-8 flex flex-wrap justify-center gap-4" style="animation-delay:.5s">
+          <a href="https://www.linkedin.com/in/houda-hafi-a3a14127a/" target="_blank" rel="noopener" aria-label="LinkedIn profile"
+             class="card flex items-center gap-2.5 rounded-full border border-line bg-panel px-5 py-2.5 text-sm font-semibold">
+            <svg viewBox="0 0 24 24" class="h-5 w-5" aria-hidden="true"><rect width="24" height="24" rx="4" fill="#0A66C2"/><circle cx="6.6" cy="6.9" r="1.7" fill="#fff"/><rect x="5" y="9.6" width="3.2" height="8.8" fill="#fff"/><path fill="#fff" d="M10.2 9.6h3v1.3c.5-.9 1.6-1.5 3-1.5 2.6 0 3.6 1.6 3.6 4.1v4.9h-3.2v-4.4c0-1.1-.4-1.8-1.4-1.8-1.1 0-1.8.8-1.8 1.9v4.3h-3.2z"/></svg> LinkedIn
+          </a>
+          <a href="mailto:houdahafi69@gmail.com" aria-label="Send an email"
+             class="card flex items-center gap-2.5 rounded-full border border-line bg-panel px-5 py-2.5 text-sm font-semibold">
+            <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="" class="h-5 w-5" /> Gmail
+          </a>
         </div>
+      </div>
     </section>
 
-
-    <section class="projects">
-        <h2>Projects 🚀</h2>
-        <h3>Company Website: Démo de mon travail 🧩</h3>
-        <iframe src="https://drive.google.com/file/d/17Bvg8wQ4sYlC4mkkqB5t-VNsOdjgiVxb/preview" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <p>This project is a company website designed to showcase the services, innovations, and job opportunities of
-            two complementary businesses. It serves as a central platform where clients can explore tailored solutions,
-            while job seekers can discover career prospects, ensuring a seamless and engaging user experience.</p>
-        <p><strong style="display: block; text-align: center;">Technologies Used:</strong></p>
-        <div style="text-align: center;">
-            <ul style="padding: 0; display: inline-block; text-align: left;">
-                <li><span class="icon">🔧</span> Backend: NestJS, Prisma</li>
-                <li><span class="icon">🔧</span> Frontend: ReactJS</li>
-                <li><span class="icon">🔧</span> Database: MongoDB</li>
-            </ul>
+    <!-- ABOUT -->
+    <section id="about" class="border-t border-line px-6 py-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal text-center">
+          <h2 class="text-3xl font-extrabold sm:text-4xl">About Me ✨</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-mute">A brief overview of my passion for technology, problem-solving, and sharing knowledge.</p>
         </div>
-        <h3>JobPortal Platform: Démo de mon travail 📚</h3>
-        <iframe src="https://drive.google.com/file/d/1zwD9rgop_2FeDm_IU_ulfFppu-Rjf77T/preview" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <p>This project is designed to connect job seekers with employers by providing a platform where job
-            opportunities can be posted and discovered. It enables companies to advertise job openings, while job
-            seekers can create profiles, upload resumes, and apply for positions directly through the portal.</p>
-        <p style="display: block; text-align: left;">The platform typically includes features such as advanced search
-            filters, including:</p>
-        <ul>
-            <li><span class="icon">✅</span> Analysis of CVs to extract key information using OCR technology.</li>
-            <li><span class="icon">✅</span> Implementation of an application sorting system based on the similarity
-                between
-                the information extracted from CVs and the requirements of the proposed job positions.</li>
-        </ul>
-        <h3>Management platform: Démo de mon travail 🧩</h3>
-        <iframe src="https://drive.google.com/file/d/1OFm1oq8rO9KngDMPF9_CT6Qs-Yoi46Yd/preview" frameborder="0"
-            allow="autoplay; encrypted-media" allowfullscreen></iframe>
-        <p>This project is designed to efficiently manage employees, projects, and tasks within a company, streamlining
-            operations, improving collaboration, and optimizing resource allocation for enhanced productivity.</p>
+        <div class="mt-14 grid gap-6 md:grid-cols-3">
+          <article class="card reveal rounded-2xl border border-line bg-panel p-7">
+            <h3 class="text-lg font-bold">Technical Focus</h3>
+            <p class="mt-3 text-mute">I design and build scalable, maintainable applications with clean architecture. My goal is solutions that are robust, performant, and easy to evolve.</p>
+          </article>
+          <article class="card reveal rounded-2xl border border-line bg-panel p-7">
+            <h3 class="text-lg font-bold">Collaboration &amp; Quality</h3>
+            <p class="mt-3 text-mute">I value constructive feedback and team-driven problem solving. Reliable, well-tested software is a priority in every project I join.</p>
+          </article>
+          <article class="card reveal rounded-2xl border border-line bg-panel p-7">
+            <h3 class="text-lg font-bold">Growth Mindset</h3>
+            <p class="mt-3 text-mute">I keep learning, exploring new technologies, and adapting to new needs. Staying curious is how I deliver better solutions and keep growing.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <footer>
-        <p>❤️ Built with love by Houda Hafi 👩‍💻</p>
-    </footer>
+    <!-- SKILLS -->
+    <section id="skills" class="border-t border-line px-6 py-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal text-center">
+          <h2 class="text-3xl font-extrabold sm:text-4xl">Skills 🛠️</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-mute">The technologies and tools I use to build robust and scalable solutions.</p>
+        </div>
+        <div id="skillsGrid" class="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-3"></div>
+      </div>
+    </section>
 
+    <!-- EXPERIENCE -->
+    <section id="experience" class="border-t border-line px-6 py-24">
+      <div class="mx-auto max-w-4xl">
+        <div class="reveal text-center">
+          <h2 class="text-3xl font-extrabold sm:text-4xl">Professional Experience 💼</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-mute">My journey through various roles, contributing to impactful projects.</p>
+        </div>
+        <ol id="expList" class="relative mt-14 space-y-8 border-l border-line pl-8"></ol>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="border-t border-line px-6 py-24">
+      <div class="mx-auto max-w-6xl">
+        <div class="reveal text-center">
+          <h2 class="text-3xl font-extrabold sm:text-4xl">Highlighted Projects 🎉</h2>
+          <p class="mx-auto mt-3 max-w-2xl text-mute">A selection of projects showcasing my technical skills and problem-solving.</p>
+        </div>
+        <div id="projGrid" class="mt-14 grid gap-6 md:grid-cols-2"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-line px-6 py-8 text-center text-sm text-mute">
+    <p>© <span id="year"></span> Houda Hafi. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const CUSTOM_ICONS = { drupal: 'https://cdn.simpleicons.org/drupal/0678BE' };
+    const SKILLS = [
+      { title: 'Programming Languages', icons: 'py,java,c,php,js,ts' },
+      { title: 'Frontend Development',  icons: 'html,css,react,angular,astro,tailwind,bootstrap' },
+      { title: 'Backend Development',   icons: 'nestjs,express,spring,flask,php,drupal' },
+      { title: 'Databases',             icons: 'mysql,mongodb,postgresql' },
+      { title: 'Tools & Others',        icons: 'docker,git,github,postman' },
+    ];
+
+    const EXPERIENCE = [
+      { role: 'Software Engineer', company: 'Mat-it', dates: 'Apr 2025 – Present',
+        bullets: ['Developed and maintained full-stack web applications, contributing to both frontend and backend development.',
+                  'Converted Figma designs into responsive, user-friendly web interfaces across different screen sizes.',
+                  'Performed application testing and debugging to ensure functionality, performance, and code quality.'],
+        tags: ['React', 'Drupal', 'PHP', 'EJS', 'Express.js'] },
+      { role: 'Full-Stack Developer', company: 'Freelance', dates: 'Jun 2025 – May 2025',
+        bullets: ['Developed and maintained responsive company websites using NestJS and React.',
+                  'Used Docker and Prisma to support application containerization and database management.',
+                  'Developed a back-office administration system for managing website content and user accounts.'],
+        tags: ['NestJS', 'React', 'Docker', 'Prisma', 'MongoDB'] },
+    ];
+
+    const PROJECTS = [
+      { title: 'Backoffice Admin System',
+        desc: 'A full back-office admin system built for a client to manage website content, user data, and job listings, designed to keep operations smooth as the business grows.',
+        features: ['Dashboard to manage website content and user interactions', 'Secure handling of job listings and user data', 'Optimised for performance and ease of use'],
+        tech: ['NestJS', 'Prisma', 'React', 'MongoDB'],
+        demo: 'https://drive.google.com/file/d/1i_vM3LHfdgUE8CQ3HRmLNnlsm6LlGZYs/view?usp=sharing' },
+      { title: 'Company Website (Front Office)',
+        desc: 'A public website presenting the services and innovations of two complementary businesses, where clients explore tailored solutions and job seekers discover career opportunities.',
+        features: ['Showcase of services and innovations for both businesses', 'Careers area for job seekers', 'Smooth, engaging experience for clients and candidates'],
+        tech: ['NestJS', 'Prisma', 'React', 'MongoDB'],
+        demo: 'https://drive.google.com/file/d/1IT1qhsFh9C77ansjypxs76yL2Zy2g5wA/view?usp=sharing' },
+      { title: 'JobPortal Platform',
+        desc: 'A recruitment platform that connects job seekers and employers. Companies post openings, and candidates build profiles, upload resumes, and apply directly.',
+        features: ['Advanced search filters for job listings', 'OCR-based CV analysis that extracts key candidate information', 'Application ranking based on how well each CV matches the job requirements'],
+        tech: ['Angular', 'Tailwind CSS', 'Spring Boot', 'Flask', 'PostgreSQL'],
+        demo: 'https://drive.google.com/file/d/1h4BvG_g14qWNhAFsKNmlFFOKS5zzSGQX/view?usp=sharing' },
+      { title: 'Management Platform',
+        desc: 'An internal tool for managing employees, projects, and tasks in one place, built to streamline operations, improve collaboration, and make better use of company resources.',
+        features: ['Employee and team management', 'Project and task tracking', 'Resource allocation to boost productivity'],
+        tech: ['React', 'Bootstrap', 'Node.js', 'NestJS', 'MongoDB'],
+        demo: 'https://drive.google.com/file/d/1ay5go7LwpkijodFQPDYRUK8xRkczuU_7/view?usp=sharing' },
+    ];
+    // Turns a Google Drive share link into its embeddable player URL
+    const embed = u => { const m = u.match(/\/d\/([^/?]+)/); return m ? 'https://drive.google.com/file/d/' + m[1] + '/preview' : u; };
+
+    const tag = t => `<span class="rounded-full border border-line bg-ink px-3 py-1 text-xs font-medium text-accent">${t}</span>`;
+
+    document.getElementById('skillsGrid').innerHTML = SKILLS.map(s => `
+      <article class="card reveal rounded-2xl border border-line bg-panel p-7">
+        <h3 class="text-lg font-bold">${s.title}</h3>
+        <div class="mt-5 flex flex-wrap gap-2.5">${s.icons.split(',').map(i => CUSTOM_ICONS[i]
+          ? `<span class="flex h-12 w-12 items-center justify-center rounded-xl bg-[#F4F2ED] p-2.5" title="${i}"><img src="${CUSTOM_ICONS[i]}" alt="${i}" loading="lazy" class="h-full w-full" /></span>`
+          : `<img src="https://skillicons.dev/icons?i=${i}&theme=light" alt="${i}" title="${i}" loading="lazy" class="h-12 w-12" />`).join('')}</div>
+      </article>`).join('');
+
+    document.getElementById('expList').innerHTML = EXPERIENCE.map((e, i) => `
+      <li class="reveal relative">
+        <span class="absolute -left-[39px] top-7 h-3 w-3 rounded-full ${i === 0 ? 'bg-accent' : 'bg-line'} ring-4 ring-ink"></span>
+        <article class="card rounded-2xl border border-line bg-panel p-7">
+          <div class="flex flex-wrap items-baseline justify-between gap-2">
+            <h3 class="text-lg font-bold">${e.role} – ${e.company}</h3>
+            <p class="text-sm text-mute">${e.dates}</p>
+          </div>
+          <ul class="mt-4 list-disc space-y-2 pl-5 text-mute marker:text-line">${e.bullets.map(b => `<li>${b}</li>`).join('')}</ul>
+          <div class="mt-5 flex flex-wrap items-center gap-2">${e.tags.map(tag).join('')}
+            ${e.link ? `<a class="ml-2 text-sm font-semibold text-accent hover:underline" href="${e.link.url}" target="_blank" rel="noopener">${e.link.label}</a>` : ''}
+          </div>
+        </article>
+      </li>`).join('');
+
+    document.getElementById('projGrid').innerHTML = PROJECTS.map(p => `
+      <article class="card reveal flex flex-col rounded-2xl border border-line bg-panel p-7">
+        <div class="mb-6 aspect-video overflow-hidden rounded-xl border border-line bg-ink">
+          <iframe src="${embed(p.demo)}" title="${p.title} demo video" loading="lazy" allow="autoplay; fullscreen" allowfullscreen class="h-full w-full border-0"></iframe>
+        </div>
+        <h3 class="text-xl font-bold">${p.title}</h3>
+        <p class="mt-3 text-mute">${p.desc}</p>
+        <h4 class="mt-5 text-sm font-semibold">Key Features</h4>
+        <ul class="mt-2 list-disc space-y-1 pl-5 text-sm text-mute marker:text-line">${p.features.map(f => `<li>${f}</li>`).join('')}</ul>
+        <div class="mt-5 flex flex-wrap gap-2">${p.tech.map(tag).join('')}</div>
+        <div class="mt-auto flex gap-3 pt-7">
+          <a class="rounded-full bg-accent px-5 py-2 text-sm font-semibold text-white transition hover:bg-paper" href="${p.demo}" target="_blank" rel="noopener">Watch Demo</a>
+        </div>
+      </article>`).join('');
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Mobile menu
+    const menuBtn = document.getElementById('menuBtn'), mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      const open = mobileMenu.classList.toggle('hidden') === false;
+      menuBtn.setAttribute('aria-expanded', String(open));
+    });
+    mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      mobileMenu.classList.add('hidden'); menuBtn.setAttribute('aria-expanded', 'false');
+    }));
+
+    // Scroll reveal
+    const io = new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+    }), { threshold: 0.1 });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Active nav link
+    const links = document.querySelectorAll('.nav-link');
+    const so = new IntersectionObserver(es => es.forEach(en => {
+      if (en.isIntersecting) links.forEach(l => l.setAttribute('aria-current', String(l.getAttribute('href') === '#' + en.target.id)));
+    }), { rootMargin: '-45% 0px -50% 0px' });
+    document.querySelectorAll('main section').forEach(s => so.observe(s));
+
+  </script>
 </body>
-
 </html>

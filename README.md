@@ -1,75 +1,96 @@
-# Mon Portfolio
+# My Portfolio
 
-Bienvenue sur mon portfolio ! 🎉 
+Welcome to my portfolio! 🎉
 
-Ce portfolio est conçu pour présenter mes compétences, projets et expériences en tant qu'ingénieure en informatique. Je suis passionnée par la technologie, l'apprentissage continu et la résolution de problèmes complexes. Vous trouverez ici une présentation de mes réalisations professionnelles et académiques.
+This portfolio showcases my skills, projects, and experience as a software engineer. I'm passionate about technology, continuous learning, and solving complex problems. Here you'll find an overview of my professional and academic work.
 
-## 🌟 Fonctionnalités Principales
-- **À propos de moi** : Une présentation rapide de mes passions, mes compétences et mes valeurs.
-- **Compétences** : Une liste détaillée de mes compétences techniques, notamment les langages de programmation, frameworks, outils de versionnement et bases de données.
-- **Projets** : Une sélection de mes projets récents avec des démos intégrées via iframe.
-- **Liens sociaux** : Accès direct à mon [LinkedIn](https://www.linkedin.com/in/houda-hafi-a3a14127a/) et à mon email professionnel pour toute opportunité de collaboration.
+## 🌟 Key Features
+- **About Me**: A quick introduction to my passions, skills, and values.
+- **Skills**: A detailed list of my technical skills, including programming languages, frameworks, tools, and databases.
+- **Professional Experience**: My career path, with my responsibilities and the technologies I used.
+- **Projects**: A selection of my recent projects with demo videos embedded through iframes.
+- **Social Links**: Direct access to my [LinkedIn](https://www.linkedin.com/in/houda-hafi-a3a14127a/) and my professional email for any collaboration opportunity.
 
+## 📄 About Me
+I'm a software engineer passionate about new technologies and continuous learning. My varied experience has taught me to collaborate effectively in a team and to see projects through to completion.
 
-## 📄 À propos de moi
-Ingénieure en informatique, je suis passionnée par les nouvelles technologies et l'apprentissage continu. Mes expériences variées m'ont permis de collaborer efficacement en équipe et de mener des projets à bien.
+## 🛠️ Technologies Used
 
+### Languages:
+- Python, Java, C, PHP, JavaScript, TypeScript, HTML, CSS
 
-## 🛠️ Technologies Utilisées
+### Frameworks and Libraries:
+- Angular, React, NestJS, Express, Spring, Flask, Astro, Tailwind CSS, Bootstrap, Drupal
 
-### Langages :
-- Python, Java, C, PHP, JavaScript, TypeScript
-
-### Frameworks and Libraries :
-- Angular, React, NestJS, Express, Spring, Flask
-
-### Bases de Données :
+### Databases:
 - MySQL, MongoDB, PostgreSQL
 
-### Outils de Versionnement :
-- Git, GitHub
+### Tools:
+- Git, GitHub, Docker, Postman
 
-## 🚀 Projets Présentés
+## 🚀 Featured Projects
+
+### Backoffice Admin System
+**Description**:
+A complete back-office admin system for managing a client's website content, user data, and job listings, designed to keep operations smooth and scalable.
+
+**Key features:**
+- Dashboard to manage website content and user interactions.
+- Secure handling of job listings and user data.
+- Optimized for performance and ease of use.
+
+**Technologies:** NestJS, Prisma, React, MongoDB
+
+**[Watch the demo](https://drive.google.com/file/d/1i_vM3LHfdgUE8CQ3HRmLNnlsm6LlGZYs/preview)**
+
+---
 
 ### Company Website
-**Description** :
-Ce projet est un site web d'entreprise permettant de présenter les services, les offres d'emploi et les informations clés de l'organisation. Il sert de plateforme centrale pour les clients potentiels et les chercheurs d'emploi.
+**Description**:
+A company website presenting the organization's services, job openings, and key information. It serves as a central platform for potential clients and job seekers.
 
-**Fonctionnalités principales :**
-- Présentation des services et de l’entreprise.
-- Affichage des offres d’emploi avec possibilité de postuler.
-- Formulaire de contact et informations de l’entreprise.
+**Key features:**
+- Presentation of the company and its services.
+- Job listings with the ability to apply.
+- Contact form and company information.
 
-**[Voir la démo](https://drive.google.com/file/d/17Bvg8wQ4sYlC4mkkqB5t-VNsOdjgiVxb/preview)**
+**Technologies:** NestJS, Prisma, React, MongoDB
+
+**[Watch the demo](https://drive.google.com/file/d/1IT1qhsFh9C77ansjypxs76yL2Zy2g5wA/preview)**
 
 ---
 
 ### JobPortal Platform
-**Description** :
-Ce projet vise à connecter les chercheurs d'emploi avec les recruteurs via une plateforme où des offres d'emploi peuvent être publiées et consultées. 
+**Description**:
+A platform that connects job seekers with recruiters, where job offers can be posted and browsed.
 
-**Fonctionnalités principales :**
-- Analyse des CVs avec technologie OCR pour extraire les informations clés.
-- Tri des candidatures basé sur la similarité entre les informations extraites des CVs et les exigences des postes proposés.
+**Key features:**
+- CV analysis using OCR technology to extract key information.
+- Application ranking based on the similarity between the information extracted from CVs and the requirements of the proposed positions.
 
-**[Voir la démo](https://drive.google.com/file/d/1zwD9rgop_2FeDm_IU_ulfFppu-Rjf77T/preview)**
+**Technologies:** Angular, Tailwind CSS, Spring Boot, Flask, PostgreSQL
+
+**[Watch the demo](https://drive.google.com/file/d/1h4BvG_g14qWNhAFsKNmlFFOKS5zzSGQX/preview)**
 
 ---
 
 ### Management Platform
-**Description** :
-Ce projet facilite la gestion des employés, projets et tâches au sein d'une entreprise, améliorant la collaboration et l'efficacité opérationnelle.
+**Description**:
+A tool for managing employees, projects, and tasks within a company, improving collaboration and operational efficiency.
 
-**Fonctionnalités principales :**
-- Gestion efficace des ressources et des projets.
-- Amélioration de la productivité via des outils de collaboration intégrés.
+**Key features:**
+- Efficient management of resources and projects.
+- Improved productivity through built-in collaboration tools.
 
-**[Voir la démo](https://drive.google.com/file/d/1OFm1oq8rO9KngDMPF9_CT6Qs-Yoi46Yd/preview)**
+**Technologies:** React, Bootstrap, Node.js, NestJS, MongoDB
 
+**[Watch the demo](https://drive.google.com/file/d/1ay5go7LwpkijodFQPDYRUK8xRkczuU_7/preview)**
 
-### Contact
-- **Email** : houda.hafi@ensi-uma.tn
-- **LinkedIn** : [Houda Hafi](https://www.linkedin.com/in/houda-hafi-a3a14127a/)
+---
 
-## ❤️ Remerciements
-Merci de visiter mon portfolio. Si vous souhaitez collaborer ou en savoir plus sur mes projets, n'hésitez pas à me contacter !
+## 📬 Contact
+- **Email**: houdahafi69@gmail.com
+- **LinkedIn**: [Houda Hafi](https://www.linkedin.com/in/houda-hafi-a3a14127a/)
+
+## ❤️ Acknowledgements
+Thank you for visiting my portfolio. If you'd like to collaborate or learn more about my projects, feel free to get in touch!
