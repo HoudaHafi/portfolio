@@ -9,7 +9,7 @@ This portfolio showcases my skills, projects, and experience as a software engin
 - **Skills**: A detailed list of my technical skills, including programming languages, frameworks, tools, and databases.
 - **Professional Experience**: My career path, with my responsibilities and the technologies I used.
 - **Projects**: A selection of my recent projects with demo videos embedded through iframes.
-- **Social Links**: Direct access to my [LinkedIn](https://www.linkedin.com/in/houda-hafi-a3a14127a/) and my professional email for any collaboration opportunity.
+- **Social Links**: Direct access to my [LinkedIn](https://www.linkedin.com/in/houda-hafi/) and my professional email for any collaboration opportunity.
 
 ## 📄 About Me
 I'm a software engineer passionate about new technologies and continuous learning. My varied experience has taught me to collaborate effectively in a team and to see projects through to completion.
@@ -90,7 +90,7 @@ A tool for managing employees, projects, and tasks within a company, improving c
 
 ## 📬 Contact
 - **Email**: houdahafi69@gmail.com
-- **LinkedIn**: [Houda Hafi](https://www.linkedin.com/in/houda-hafi-a3a14127a/)
+- **LinkedIn**: [Houda Hafi](https://www.linkedin.com/in/houda-hafi/)
 
 ## ❤️ Acknowledgements
 Thank you for visiting my portfolio. If you'd like to collaborate or learn more about my projects, feel free to get in touch!
